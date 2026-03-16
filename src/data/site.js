@@ -42,3 +42,51 @@ export const skills = [
     ],
   },
 ]
+
+export const projects = [
+  {
+    title: 'Cloud Cost Optimization Platform',
+    period: 'Aug 2026 - Present',
+    description:
+      'Serverless AWS platform that pulls cost and utilization data from Cost Explorer and CloudWatch into DynamoDB, using an EWMA-based rule engine to flag idle EC2 instances, unattached EBS volumes, and stale snapshots, with automated remediation and a Terraform-provisioned dashboard.',
+    tech: ['AWS Lambda', 'EventBridge', 'DynamoDB', 'Terraform', 'ECS Fargate'],
+    demoUrl: '',
+    codeUrl: 'https://github.com/itssduy/Cloud-Optimizer',
+  },
+  {
+    title: 'Personal Learning Agent',
+    period: 'June 2026 - Jul 2026',
+    description:
+      'RAG-powered learning agent built with the Strands Agents SDK and Claude that tests understanding through guided prompts instead of returning flat answers, backed by an ingestion pipeline that indexes files, URLs, and S3 URIs into S3 Vectors with a weekly refresh via EventBridge and Lambda.',
+    tech: ['Strands Agents SDK', 'Claude', 'S3 Vectors', 'Terraform'],
+    demoUrl: '',
+    codeUrl: 'https://github.com/itssduy/Personal-Learning-Agent',
+  },
+  {
+    title: 'Event Pipeline',
+    period: 'Mar 2026',
+    description:
+      'Cloud pipeline on AWS using SQS and S3 to automatically capture, queue, and separate incoming API requests for scalable processing.',
+    tech: ['AWS SQS', 'AWS S3', 'API Gateway'],
+    demoUrl: '',
+    codeUrl: '',
+  },
+  {
+    title: 'RealSpect',
+    period: 'Jan 2026 - May 2026',
+    description:
+      'Early-stage computer vision tool for rental property condition assessment, with a FastAPI backend, React frontend, and OpenCV for image preprocessing. Validated with about 10 product interviews with tenants and landlords.',
+    tech: ['FastAPI', 'React', 'OpenCV'],
+    demoUrl: 'https://realspect.app/',
+    codeUrl: '',
+  },
+  {
+    title: 'Geaux App',
+    period: 'Aug 2025 - Dec 2025',
+    description:
+      'Campus platform for LSU with geofenced interactive mapping and expiring, location-based posts, built as part of Google Developer Student Club LSU.',
+    tech: ['Bun', 'Hono', 'Zod', 'Drizzle ORM', 'Supabase'],
+    demoUrl: '',
+    codeUrl: '',
+  },
+]
