@@ -90,3 +90,64 @@ export const projects = [
     codeUrl: '',
   },
 ]
+
+export const experience = [
+  {
+    role: 'Cloud Developer Intern',
+    company: 'CGI',
+    period: 'June 2026 - Present',
+    location: 'Lafayette, LA',
+    bullets: [
+      'Enhanced an internal AWS auto-tagging system **deployed across multiple orgs and partitions** using EventBridge, Lambda, and cross-account IAM to auto-track creator identity, resource ARN, and timestamps for Bedrock AgentCore.',
+      'Migrated a multi-cloud AI pricing assistant from Streamlit to Chainlit **one month ahead of schedule**, adding real-time streaming powered by a Strands orchestrator coordinating 4 AWS/Azure sub-agents via MCP.',
+      'Architected a 9+ module Terraform library for Bedrock AgentCore adopted as the standard across a 40+ person cloud engineering team for internal and MSP efforts.',
+      'Used AI-assisted, spec-driven development in devcontainers with GitLab CI/CD to accelerate delivery cycles.',
+    ],
+  },
+  {
+    role: 'Software Engineer',
+    company: 'FIPSE',
+    period: 'April 2026 - Present',
+    location: 'Lafayette, LA',
+    bullets: [
+      'Developed a full-stack Django app on GCP for a federal initiative, enabling **400+ educators and students** to create, configure, and evaluate custom AI agents.',
+      'Built a search pipeline with Google Document AI, Gemini, and Vertex AI Vector Search to extract text and grant info from faculty CVs into structured, searchable JSON.',
+      'Verified file integrity on server-side uploads using SHA-256 hashes and configured GCP IAM roles and service account credentials across cloud services.',
+      'Containerized the stack (Django, PostgreSQL, Caddy) with Docker Compose for consistent local and production environments, managing sprints and PR reviews via Azure DevOps.',
+    ],
+  },
+  {
+    role: 'Lead Frontend Engineer & Full-Stack Developer',
+    company: 'CAPE',
+    period: 'Aug 2024 - April 2026',
+    location: 'Lafayette, LA',
+    bullets: [
+      'Architected a multi-tenant ground-station web interface (ESG-Grid) in Angular, RxJS, and Tailwind, modeling telemetry hierarchies across organizations, missions, vehicles, and payload subsystems.',
+      'Built full-stack APIs with Django Ninja and PostgreSQL, including schema migrations and API key auth, and containerized backend workloads on Oracle Government Cloud.',
+      '**Led a team of 5 frontend developers within a 100+ member org**, managing sprints, PR reviews, and compliance-driven code standards in Bitbucket.',
+      'Also served as Assistant Project Manager, leading project direction within a 20+ person research team and preparing technical documentation, scope of work, and presentations for supervisors and advisors.',
+      '**Awarded 2nd place** at the Undergraduate Research Conference, University of Louisiana at Lafayette, for ESG-Grid.',
+    ],
+  },
+  {
+    role: 'Backend Developer',
+    company: 'Google Developer Student Club, LSU',
+    period: 'Aug 2025 - Dec 2025',
+    location: 'Baton Rouge, LA',
+    bullets: [
+      'Developed Geaux App, a campus-focused platform featuring LSU-geofenced interactive mapping with expiring, location-based posts.',
+      'Built type-safe backend services using Bun, Hono, Zod, and Drizzle ORM, integrated with Supabase authentication and storage systems.',
+      'Implemented automated testing and CI pipelines using Vitest to improve backend reliability.',
+    ],
+  },
+  {
+    role: 'Cybersecurity Research Developer',
+    company: 'Ethical Hacking Club',
+    period: 'Dec 2025 - Mar 2026',
+    location: 'Lafayette, LA',
+    bullets: [
+      'Practiced penetration testing techniques and researched network and web vulnerabilities using Hack The Box labs.',
+      'Completed CTF challenges focused on vulnerability mitigation and authentication weaknesses.',
+    ],
+  },
+]
