@@ -1,0 +1,43 @@
+:root {
+  --background-color: #030712;
+  --font-color: #f9fafb;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root, html, body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: auto;
+  background-color: var(--background-color);
+  color: var(--font-color);
+}
+
+body {
+  margin: 0 auto;
+}
+header ul {
+  list-style: none;
+  gap: 20px;
+  display: flex;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+@media screen and (max-width: 2000px){
+  body {
+    width: 1000px
+  }
+}
