@@ -3,7 +3,11 @@
 export const profile = {
   name: 'Duy Tran',
   role: 'Cloud Engineer',
-  bio: `Computer Science student at the University of Louisiana at Lafayette, concentrating in Cloud Computing. Currently a Cloud Developer Intern at CGI, building AWS infrastructure and Bedrock AgentCore tooling, and a Software Engineer at FIPSE, building AI-powered web apps on GCP.`,
+  photo: '/headshot.jpg',
+  tags: ['AWS', 'Terraform', 'Cloud Infrastructure', 'Full-Stack Development'],
+  bio: `I'm Duy, a Computer Science student at the University of Louisiana at Lafayette with a concentration in Cloud Computing.
+
+My work spans cloud infrastructure, backend development, and full-stack engineering, with a current focus on AWS automation and AI-powered agent tooling at CGI and FIPSE. I'm interested in building systems that are reliable, observable, and easy to operate at scale.`,
   location: 'Lafayette, LA',
   email: 'duyatran05@gmail.com',
   resumeUrl: '/resume.pdf',
