@@ -1,11 +1,98 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
 header nav {
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 45rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: var(--content-width);
+  padding: 1.25rem 1.5rem;
+}
+
+header .brand {
+  font-size: 1.05rem;
+  font-weight: 300;
+  color: var(--text);
+  text-decoration: none;
+}
+
+header .brand .brand-first {
+  font-weight: 700;
 }
 
 header nav ul {
+  display: flex;
+  gap: 1.75rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+header nav ul a:hover {
+  color: var(--text);
+}
+
+header nav ul a.active {
+  color: var(--accent);
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  width: 1.6rem;
+  height: 1.6rem;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  height: 2px;
+  background-color: var(--text);
+  border-radius: 2px;
+}
+
+@media (max-width: 640px) {
+  .menu-toggle {
     display: flex;
-    list-style: none;
-    justify-content: space-between;
+  }
+
+  header nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+  }
+
+  header nav ul.open {
+    display: flex;
+    margin-top: 1.25rem;
+  }
+
+  header nav ul li {
+    border-top: 1px solid var(--border);
+  }
+
+  header nav ul a {
+    display: block;
+    padding: 0.85rem 0.1rem;
+  }
 }
