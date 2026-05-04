@@ -14,7 +14,7 @@ header nav {
   margin-right: auto;
   margin-left: auto;
   max-width: var(--content-width);
-  padding: 1.25rem 1.5rem;
+  padding: 0.9rem 1.5rem;
 }
 
 header .brand {
