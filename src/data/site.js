@@ -18,6 +18,13 @@ My work spans cloud infrastructure, backend development, and full-stack engineer
   },
 }
 
+export const education = {
+  school: 'University of Louisiana at Lafayette',
+  degree: 'B.S. in Computer Science, Cloud Computing Concentration',
+  gpa: '3.5/4.0',
+  period: 'Dec 2026',
+}
+
 export const skills = [
   {
     category: 'Cloud & Infrastructure',
@@ -43,6 +50,7 @@ export const skills = [
       { name: 'AWS Certified Cloud Practitioner', date: 'Mar 2026' },
       { name: 'AWS Certified Developer - Associate', date: 'In Progress' },
       { name: 'CompTIA Security+', date: 'In Progress' },
+      { name: 'Harvard CS50', date: 'Jan 2025' },
     ],
   },
 ]

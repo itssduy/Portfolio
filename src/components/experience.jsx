@@ -1,5 +1,5 @@
 import '../styles/experience.css'
-import { experience } from '../data/site'
+import { education, experience } from '../data/site'
 
 const renderBullet = (text) =>
   text
@@ -15,7 +15,22 @@ const renderBullet = (text) =>
 const Experience = () => {
   return (
     <section className="experience">
-      <h2 className="section-title">Experience</h2>
+      <h2 className="section-title">Education</h2>
+      <ol className="timeline">
+        <li className="entry">
+          <div className="entry-header">
+            <h3>{education.school}</h3>
+            <div className="entry-meta">
+              <span className="badge">{education.period}</span>
+            </div>
+          </div>
+          <p className="role">
+            {education.degree}, GPA {education.gpa}
+          </p>
+        </li>
+      </ol>
+
+      <h2 className="section-title experience-title">Experience</h2>
       <ol className="timeline">
         {experience.map((job) => (
           <li className="entry" key={`${job.company}-${job.role}`}>
