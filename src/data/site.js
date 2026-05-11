@@ -27,6 +27,17 @@ export const education = {
 
 export const skills = [
   {
+    category: 'Certifications',
+    wide: true,
+    items: [
+      { name: 'AWS Certified Solutions Architect - Associate', date: 'Sept 2026' },
+      { name: 'AWS Certified Cloud Practitioner', date: 'Mar 2026' },
+      { name: 'AWS Certified Developer - Associate', date: 'In Progress' },
+      { name: 'CompTIA Security+', date: 'In Progress' },
+      { name: 'Harvard CS50', date: 'Jan 2025' },
+    ],
+  },
+  {
     category: 'Cloud & Infrastructure',
     items: ['AWS', 'GCP', 'Oracle Cloud', 'Terraform', 'Docker', 'CI/CD'],
   },
@@ -41,17 +52,6 @@ export const skills = [
   {
     category: 'Databases',
     items: ['PostgreSQL', 'DynamoDB', 'MongoDB', 'SQLite', 'RDS'],
-  },
-  {
-    category: 'Certifications',
-    wide: true,
-    items: [
-      { name: 'AWS Certified Solutions Architect - Associate', date: 'Sept 2026' },
-      { name: 'AWS Certified Cloud Practitioner', date: 'Mar 2026' },
-      { name: 'AWS Certified Developer - Associate', date: 'In Progress' },
-      { name: 'CompTIA Security+', date: 'In Progress' },
-      { name: 'Harvard CS50', date: 'Jan 2025' },
-    ],
   },
 ]
 
