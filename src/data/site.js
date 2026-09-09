@@ -57,6 +57,15 @@ export const skills = [
 
 export const projects = [
   {
+    title: 'Portfolio Website',
+    period: 'Sept 2026 - Present',
+    description:
+      'This site. A React and Vite single-page app with client-side routing, built from scratch and deployed via a GitHub Actions workflow that builds and publishes to GitHub Pages on every push, with a custom domain.',
+    tech: ['React', 'Vite', 'React Router', 'GitHub Actions'],
+    demoUrl: 'https://www.duyatran.com',
+    codeUrl: 'https://github.com/itssduy/Portfolio',
+  },
+  {
     title: 'Cloud Cost Optimization Platform',
     period: 'Aug 2026 - Present',
     description:
