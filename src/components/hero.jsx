@@ -7,7 +7,6 @@ const Hero = () => {
     <section className="hero">
       <div className="hero-top">
         <div>
-          <p className="eyebrow">Hi, I'm</p>
           <h1>{profile.name}</h1>
           <h2>{profile.role}</h2>
           {profile.tags?.length > 0 && <p className="tags">{profile.tags.join(' | ')}</p>}
