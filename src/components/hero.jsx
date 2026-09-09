@@ -1,7 +1,6 @@
-import { Link } from 'react-router-dom'
 import '../styles/hero.css'
 import { profile } from '../data/site'
-import { GithubIcon, LinkedinIcon, EmailIcon } from './icons'
+import { GithubIcon, LinkedinIcon, EmailIcon, ResumeIcon } from './icons'
 
 const Hero = () => {
   return (
@@ -18,15 +17,6 @@ const Hero = () => {
           <img className="hero-photo" src={profile.photo} alt={profile.name} />
         )}
       </div>
-      <div className="hero-actions">
-        <Link className="button primary" to="/projects">
-          View Projects
-        </Link>
-        <a className="button" href={profile.resumeUrl}>
-          Resume
-        </a>
-      </div>
-
       <div className="hero-contact" id="contact">
         <h2 className="section-title">Contact</h2>
         <p>Feel free to reach me via LinkedIn or email.</p>
@@ -34,6 +24,10 @@ const Hero = () => {
           <a href={`mailto:${profile.email}`}>
             <EmailIcon />
             {profile.email}
+          </a>
+          <a href={profile.resumeUrl}>
+            <ResumeIcon />
+            Resume
           </a>
           {profile.social.github && (
             <a href={profile.social.github} target="_blank" rel="noreferrer">

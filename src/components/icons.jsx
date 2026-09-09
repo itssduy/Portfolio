@@ -16,3 +16,11 @@ export const EmailIcon = () => (
     <path d="m3.5 6 8.5 7 8.5-7" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 )
+
+export const ResumeIcon = () => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
+    <path d="M6 2.5h9l4.5 4.5V21a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1Z" strokeLinejoin="round" />
+    <path d="M14.5 2.5V7a1 1 0 0 0 1 1H19.5" strokeLinejoin="round" />
+    <path d="M8 12.5h8M8 16h8" strokeLinecap="round" />
+  </svg>
+)

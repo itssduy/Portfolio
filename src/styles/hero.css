@@ -54,12 +54,6 @@
   margin-bottom: 2rem;
 }
 
-.hero-actions {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
 .hero-contact {
   margin-top: 3rem;
   padding-top: 2.5rem;
