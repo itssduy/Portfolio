@@ -84,30 +84,12 @@ export const projects = [
     codeUrl: 'https://github.com/itssduy/Personal-Learning-Agent',
   },
   {
-    title: 'Event Pipeline',
-    period: 'Mar 2026',
-    description:
-      'Cloud pipeline on AWS using SQS and S3 to automatically capture, queue, and separate incoming API requests for scalable processing.',
-    tech: ['AWS SQS', 'AWS S3', 'API Gateway'],
-    demoUrl: '',
-    codeUrl: '',
-  },
-  {
     title: 'RealSpect',
     period: 'Jan 2026 - May 2026',
     description:
       'Early-stage computer vision tool for rental property condition assessment, with a FastAPI backend, React frontend, and OpenCV for image preprocessing. Validated with about 10 product interviews with tenants and landlords.',
     tech: ['FastAPI', 'React', 'OpenCV'],
     demoUrl: 'https://realspect.app/',
-    codeUrl: '',
-  },
-  {
-    title: 'Geaux App',
-    period: 'Aug 2025 - Dec 2025',
-    description:
-      'Campus platform for LSU with geofenced interactive mapping and expiring, location-based posts, built as part of Google Developer Student Club LSU.',
-    tech: ['Bun', 'Hono', 'Zod', 'Drizzle ORM', 'Supabase'],
-    demoUrl: '',
     codeUrl: '',
   },
 ]
