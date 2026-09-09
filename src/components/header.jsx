@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 import '../styles/header.css'
 import { profile } from '../data/site'
@@ -16,7 +15,6 @@ const [firstName, ...rest] = profile.name.split(' ')
 const lastName = rest.join(' ')
 
 const Header = () => {
-  const [open, setOpen] = useState(false)
   const { pathname } = useLocation()
   const isHome = pathname === '/'
 
@@ -26,31 +24,15 @@ const Header = () => {
         {isHome ? (
           <span />
         ) : (
-          <NavLink className="brand" to="/" onClick={() => setOpen(false)}>
+          <NavLink className="brand" to="/">
             <span className="brand-first">{firstName}</span>
             {lastName && ` ${lastName}`}
           </NavLink>
         )}
-        <button
-          type="button"
-          className="menu-toggle"
-          aria-label="Toggle navigation"
-          aria-expanded={open}
-          onClick={() => setOpen((prev) => !prev)}
-        >
-          <span />
-          <span />
-          <span />
-        </button>
-        <ul className={open ? 'open' : undefined}>
+        <ul>
           {links.map((link) => (
             <li key={link.to}>
-              <NavLink
-                to={link.to}
-                end={link.to === '/'}
-                className={navLinkClass}
-                onClick={() => setOpen(false)}
-              >
+              <NavLink to={link.to} end={link.to === '/'} className={navLinkClass}>
                 {link.label}
               </NavLink>
             </li>

@@ -36,6 +36,16 @@ html {
   scroll-behavior: smooth;
 }
 
+main {
+  padding-top: 4.25rem;
+}
+
+@media (max-width: 480px) {
+  main {
+    padding-top: 5.5rem;
+  }
+}
+
 h1,
 h2,
 h3 {

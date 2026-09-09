@@ -1,6 +1,8 @@
 header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 10;
   background-color: var(--bg);
   border-bottom: 1px solid var(--border);
@@ -11,6 +13,7 @@ header nav {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 0.5rem 1rem;
   margin-right: auto;
   margin-left: auto;
   max-width: var(--content-width);
@@ -18,7 +21,7 @@ header nav {
 }
 
 header .brand {
-  font-size: 1.05rem;
+  font-size: 0.95rem;
   font-weight: 300;
   color: var(--text);
   text-decoration: none;
@@ -30,6 +33,7 @@ header .brand .brand-first {
 
 header nav ul {
   display: flex;
+  flex-wrap: wrap;
   gap: 1.75rem;
   list-style: none;
   margin: 0;
@@ -50,49 +54,12 @@ header nav ul a.active {
   color: var(--accent);
 }
 
-.menu-toggle {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  gap: 4px;
-  width: 1.6rem;
-  height: 1.6rem;
-  padding: 0;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.menu-toggle span {
-  display: block;
-  height: 2px;
-  background-color: var(--text);
-  border-radius: 2px;
-}
-
-@media (max-width: 640px) {
-  .menu-toggle {
-    display: flex;
-  }
-
+@media (max-width: 480px) {
   header nav ul {
-    display: none;
-    flex-direction: column;
-    gap: 0;
-    width: 100%;
-  }
-
-  header nav ul.open {
-    display: flex;
-    margin-top: 1.25rem;
-  }
-
-  header nav ul li {
-    border-top: 1px solid var(--border);
+    gap: 1rem;
   }
 
   header nav ul a {
-    display: block;
-    padding: 0.85rem 0.1rem;
+    font-size: 0.82rem;
   }
 }
