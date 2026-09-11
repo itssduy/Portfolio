@@ -29,28 +29,44 @@ export const skills = [
     category: 'Certifications',
     wide: true,
     items: [
+      { name: 'CompTIA Security+', date: 'Expected Feb 2027' },
+      { name: 'AWS Certified Developer - Associate', date: 'Expected Dec 2026' },
       { name: 'AWS Certified Solutions Architect - Associate', date: 'Sept 2026' },
       { name: 'AWS Certified Cloud Practitioner', date: 'Mar 2026' },
-      { name: 'AWS Certified Developer - Associate', date: 'In Progress' },
-      { name: 'CompTIA Security+', date: 'In Progress' },
       { name: 'Harvard CS50', date: 'Jan 2025' },
     ],
   },
   {
-    category: 'Cloud & Infrastructure',
-    items: ['AWS', 'GCP', 'Oracle Cloud', 'Terraform', 'Docker', 'CI/CD'],
-  },
-  {
     category: 'Languages',
-    items: ['Python', 'JavaScript', 'TypeScript', 'Java', 'C', 'HTML/CSS'],
+    items: ['Python', 'C', 'Java', 'JavaScript', 'TypeScript', 'HTML/CSS'],
   },
   {
     category: 'Frameworks',
-    items: ['React', 'Angular', 'Django', 'Express', 'FastAPI', 'Flask'],
+    items: ['React', 'Angular', 'Express', 'Django', 'Flask', 'FastAPI', 'Chainlit'],
   },
   {
     category: 'Databases',
-    items: ['PostgreSQL', 'DynamoDB', 'MongoDB', 'SQLite', 'RDS'],
+    items: ['PostgreSQL', 'SQLite', 'MongoDB', 'DynamoDB', 'RDS'],
+  },
+  {
+    category: 'Cloud',
+    items: ['AWS', 'Oracle Cloud', 'GCP'],
+  },
+  {
+    category: 'Tools',
+    items: [
+      'Git',
+      'Docker',
+      'Jira',
+      'Linux',
+      'Postman',
+      'CI/CD',
+      'Figma',
+      'Terraform',
+      'Azure DevOps',
+      'ServiceNow',
+      'Strands',
+    ],
   },
 ]
 
