@@ -28,12 +28,6 @@
   margin-bottom: 0.25rem;
 }
 
-.hero h2 {
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: var(--text-muted);
-}
-
 .hero .tags {
   margin-top: 0.5rem;
   color: var(--text-muted);

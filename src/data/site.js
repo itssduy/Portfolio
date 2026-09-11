@@ -2,7 +2,6 @@
 
 export const profile = {
   name: 'Duy Tran',
-  role: 'Cloud Engineer',
   photo: '/headshot.jpg',
   tags: ['AWS', 'Terraform', 'Cloud Infrastructure', 'Full-Stack Development'],
   bio: `I'm Duy, a Computer Science student at the University of Louisiana at Lafayette with a concentration in Cloud Computing.

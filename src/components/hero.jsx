@@ -8,7 +8,6 @@ const Hero = () => {
       <div className="hero-top">
         <div>
           <h1>{profile.name}</h1>
-          <h2>{profile.role}</h2>
           {profile.tags?.length > 0 && <p className="tags">{profile.tags.join(' | ')}</p>}
           <p className="bio">{profile.bio}</p>
         </div>
